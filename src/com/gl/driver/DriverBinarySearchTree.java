@@ -11,18 +11,14 @@ import java.util.Set;
 public class DriverBinarySearchTree {
     public static void main(String[] args)
     {
-
         int[] keys = { 40, 20, 10, 30, 60, 50, 70 };
-
         Node root = null;
         for (int key: keys) {
             root = insert(root, key);
         }
 
-        // find pair with the given sum
         int Sum = 130;
 
-        // create an empty set
         Set<Integer> set = new HashSet<>();
 
         if (!findPair(root, Sum, set)) {
