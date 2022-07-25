@@ -17,7 +17,6 @@ public class FindSumBST {
         else {
             root.right = insert(root.right, key);
         }
-
         return root;
     }
 

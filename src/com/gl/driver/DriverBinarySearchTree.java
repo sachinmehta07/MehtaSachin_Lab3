@@ -5,7 +5,6 @@ import static com.gl.services.FindSumBST.findPair;
 import static com.gl.services.FindSumBST.insert;
 
 import java.util.HashSet;
-
 import java.util.Set;
 
 public class DriverBinarySearchTree {
@@ -21,7 +20,7 @@ public class DriverBinarySearchTree {
 
         Set<Integer> set = new HashSet<>();
 
-        if (!findPair(root, Sum, set)) {
+        if (!findPair(root,Sum,set)) {
             System.out.println("nodes are not found");
         }
     }

@@ -10,20 +10,20 @@ public class BalancingBrackets {
             }
             if (stack.isEmpty())
                 return false;
-            char popch = stack.pop();
+            char topOfTheStack = stack.pop();
             switch (ch) {
                 case ')':
-                    if (popch == '}' || popch == ']') {
+                    if (topOfTheStack == '}' || topOfTheStack == ']') {
                         return false;
                     }
                     break;
                 case '}':
-                    if (popch == ')' || popch == ']') {
+                    if (topOfTheStack == ')' || topOfTheStack == ']') {
                         return false;
                     }
                     break;
                 case ']':
-                    if (popch == ')' || popch == '}') {
+                    if (topOfTheStack == ')' || topOfTheStack == '}') {
                         return false;
                     }
                     break;
